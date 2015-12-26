@@ -1,0 +1,22 @@
+net: "./resnet_cifar10_20.prototxt"
+# test_iter specifies how many forward passes the test should carry out.
+# In the case of CIFAR-10, we have test batch size 50 and 200 test iterations,
+# covering the full 10,000 testing images.
+test_iter: 200
+test_interval: 2000
+
+base_lr: 0.01
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: 32000
+stepvalue: 48000
+
+momentum: 0.9
+weight_decay: 0.0001
+
+display: 100
+max_iter: 60000
+snapshot: 10000
+snapshot_prefix: "snapshot/"
+solver_mode: GPU
+
