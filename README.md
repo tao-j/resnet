@@ -2,7 +2,7 @@
 This repository contains several implementations of RenNet proposed by Microsoft Research Asia.
 
 ## Caffe
-
+please see [caffe](caffe) folder for details
 ## Mxnet
 
 ##### Fun facts

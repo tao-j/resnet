@@ -17,14 +17,14 @@ version number should be `2.x`. `3.x` release not tested.
 `20 layer cifar10`: 86%.  
 Almost 10 hours in training one K40 GPU with ECC off (one of the GPU core of several K80 cards).
 Even slower when trained with multiple GPUs using official Caffe repo.
-Unfortunately, the Nvidia fork of Caffe scales to multiple GPUs in a reasonable sense, however the fort is behind upstream a lot and thus it doesn't provide a Batch Normalization layer. One is encouraged to try it out.
+Unfortunately, the Nvidia fork of Caffe scales to multiple GPUs in a reasonable sense, however the fork is behind upstream a lot and thus it doesn't provide a Batch Normalization layer. One is encouraged to try it out.
 
 
 `54 layer cifar10`: 89%.  
 The same hardware for nearly 16 hours.
 
 #### Known Issues
-1. `TODO:` generate network for `islvrc 12`, currently it only generates files for `cifar10` dataset, according to the descriptions provided in the paper.
+1. `TODO:` generate network for `ilsvrc 12`, currently it only generates files for `cifar10` dataset, according to the descriptions provided in the paper.
 2. This network **hasn't** yet achieve the stipulated accuracy in the paper. But several techniques were used:
   + Padded training image with `4 pixel` each side.
   + Used the Batch Normalization layer.
