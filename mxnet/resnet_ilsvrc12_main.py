@@ -25,7 +25,7 @@ parser.add_argument('--num-epochs', type=int, default=120,
                     help='the number of training epochs')
 parser.add_argument('--load-epoch', type=int,
                     help="load the model on an epoch using the model-prefix")
-parser.add_argument('--kv-store', type=str, default='local',
+parser.add_argument('--kv-store', type=str, default='local_allreduce_device',
                     help='the kvstore type')
 args = parser.parse_args()
 
@@ -130,9 +130,9 @@ def train_model(args, network, data_loader):
 
 
 # check the network graph
-g = mx.visualization.plot_network(net)
-g.format = 'png'
-g.render()
+# g = mx.visualization.plot_network(net)
+# g.format = 'png'
+# g.render()
 
 # train
 train_model(args, net, get_iterator)

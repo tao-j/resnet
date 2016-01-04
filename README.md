@@ -3,7 +3,8 @@ This repository contains several implementations of RenNet proposed by Microsoft
 
 ## Caffe
 please see [caffe](caffe) folder for details
-## Mxnet
+## Mxnet (recommended)
+**updated mxnet** implementation on both cifar10 and ilsvrc12 dataset, which is much faster than the caffe version. See the [mxnet](/mxnet) folder for details.
 
 ##### Fun facts
 For my best knowledge, the official version of the code might not be released because of their protocols. Even if it is going to be released, it will take a significant time for them to go through procedures.
